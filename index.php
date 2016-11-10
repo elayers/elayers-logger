@@ -1,7 +1,1 @@
-<?php header('Access-Control-Allow-Origin: *');
-$logs = $_POST['console_logs'];
-if(sizeof($logs){
-foreach($logs as $log){
-    error_log("CONSOLE_LOG: ".$log);
-}
-}
+<?php header('Access-Control-Allow-Origin: *'); if($_POST['message'] != ""){ error_log("CONSOLE_LOG: ".$_POST['message']); }
